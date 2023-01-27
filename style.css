@@ -11,24 +11,15 @@ body {
 
 .o-header {
   grid-area: header;
+  text-align: center;
+}
+.o-header{
+	background: #FFA500;
+	color: #FDFDFD;
 }
 
 .o-aside {
   grid-area: aside;
-}
-
-.o-main {
-  grid-area: main;
-}
-
-.o-footer {
-  grid-area: footer;
-}
-
-.o-header{
-	background: #FFA500;
-	color: #FDFDFD;
-	
 }
 	
 .o-aside{
@@ -36,11 +27,40 @@ body {
 	color: #FDFDFD
 	
 } 
+.o-main {
+  grid-area: main;
+  text-align:center;
+}
 .o-main{
 	background: #F0FFFF;
 	color: #c1c1c1;
 }
 .o-footer {
+  grid-area: footer;
+}
+
+.o-footer {
   background: #FFA500;
   color: #FDFDFD;
+}
+h1.{
+	text-align: center;
+}
+h1{
+	padding-top:10px;
+	padding-right:10px;
+	padding-left:10px;
+	border-radius: 30px 30px 30px 30px;
+	border-top-width: 		1px;
+	border-top-style:		solid;
+	border-right-color:		black;
+	border-right-width: 	2px;
+	border-right-style:		dashed;
+	border-right-color: 	red;
+	border-bottom-width: 	1px;
+	border-bottom-style: 	solid;
+	border-bottom-color: 	black;
+	border-left-width:		2px;
+	border-left-style:		dashed;
+	border-left-color:		red;
 }
