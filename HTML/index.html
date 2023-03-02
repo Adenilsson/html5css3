@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+       
+            Nome:</br>
+            <input type="text" required placeholder="Nome" maxlength="10" name="name" autofocus></br>
+            Email: </br>
+            <input type="email" required placeholder="Email" autocomplete="off" aria-placeholder="Email" name="email"></br>
+            Senha:</br>
+            <input type="password" required neme="password" placeholder="Senha"></br>
+            Time</br>
+            <input type="radio" name="time" value="Vasco" checked>Vasco</br>
+            <input type="radio" name="time" value="Palmeiras">Palmeiras</br>
+            <input type="radio" name="time" value="URT">Urt</br>
+            <input type="radio" name="time" value="Mamore">Mamore</br>
+            Cores</br>
+            <input type="checkbox" nome="cores" value="Azul" checked>Azul</br>
+            <input type="checkbox" nome="cores" value="Amarelo">Amarelo</br>
+            <input type="checkbox" nome="cores" value="vermelho">Verde</br>
+            <input type="number" nema="quantidade" min="0" max="500" step="10"></br>
+            <input type="range" name="qualidade"></br>
+            <input type="color" name="cor"></br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
