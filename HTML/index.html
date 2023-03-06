@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.php" method="POST">
+    <form action="cadastro.php" method="POST" id="form_cadastro">
         <fieldset>
             <legend>Informações Pessoais</legend>
        
             Nome:</br>
-            <input type="text" required placeholder="Nome" maxlength="10" name="name" autofocus></br>
+            <input type="text" required placeholder="Nome" maxlength="10" name="name" autofocus></br><!--Campo obrigatorio com tamanho maximo 10 e autofocus-->
             Email: </br>
             <input type="email" required placeholder="Email" autocomplete="off" aria-placeholder="Email" name="email"></br>
             Senha:</br>
@@ -64,13 +64,46 @@
                 </optgroup>
 
             </select><br>
-           
-            <button type="botton">clique aqui</button><br>
+            Escolha um Curso<br>
+            <input name="cursos" list="lista-cursos">
+                <datalist id="lista-cursos">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="PHP">
+                </datalist>
+
+            <br><br>
             
 
+            <button type="botton">clique aqui</button><br>
             <input type="submit" value="Enviar">
         </fieldset>
     </form>
-    
+    <input type="text" name="input_fora_do_form" form="form_cadastro"><!--input fora do form basta atribuir um id para o formulario e charmar o id do formulario em form dentro do input-->
+    <h3>Formulario enviando para mais de uma pagina</h3>
+    <form id="form-cadastro" method="POST" enctype="application/x-www-form-urlencoded" name="formulario-cadastro" >
+        <fieldset>
+            <legend>Login</legend>
+                <input type="text" name="nome" autofocus required autocomplete="off"><br><br>
+                <input type="email" name="email" required autocomplete="off"><br><br>
+                <input type="password" required name="senha" formaction="teste.php" autocomplete="off"><br><br>
+                <input type="submit" name="entrar" value="Entrar" formaction="login.php" formmethod="get"><br><br>
+                <input type="submit" name="entrar" value="Entrar" formaction="email.php" formmethod="post"><br><br>
+        </fieldset>
+    </form>
+    <div contenteditable>
+        <h1>Mark e Contenteditable</h1>
+        <p contenteditable="false">O Copymatic é <mark> gerador de texto automático muito útil para quem não tem tempo e nem experiência para produzir </mark>conteúdo de qualidade para o seu negócio online e marketing de conteúdo. 
+            Ele gera automaticamente textos inteligentes que podem ser usados para diversas finalidades, como criar conteúdo para um blog, site ou rede social.</p>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Navegação entre links com a tecla tab</legend>
+            <a href="https://google.com.br" tabindex="3" accesskey="g">Google</a><br>
+            <a href="https://roadmap.sh/frontend" tabindex="2" accesskey="r">Roadmap</a><br>
+            <a href="https://www.rabbitmq.com/api-guide.html" tabindex="1" accesskey="b">Rabbitmq</a><br>
+        </fieldset>
+    </div>
+
 </body>
 </html>
