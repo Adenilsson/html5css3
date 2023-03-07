@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+}
+.elemento{width: 300px;
+    height: 300px;
+    background-color: #ccc;
+}
+svg {
+    background-color: #ccc;
+}
+svg rect{
+    fill: blue;
+    stroke: red;
+    stroke-width: 3;
+    opacity: 0.5;
+   
+
+
+}
