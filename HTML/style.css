@@ -13,7 +13,65 @@ svg rect{
     stroke: red;
     stroke-width: 3;
     opacity: 0.5;
+
    
 
 
+}
+.circle  {
+  background-color: rgb(246, 246, 240)
+ 
+}
+.circle circle{
+  fill: rgb(164, 5, 5);
+  stroke: rgb(164, 5, 5);;
+  stroke-width: 3;
+  opacity: 0.5;
+
+}
+.ellipse  {
+  background-color: rgb(166, 166, 29)
+ 
+}
+.ellipse ellipse{
+  fill: rgb(164, 5, 5);
+  stroke: rgb(164, 5, 5);;
+  stroke-width: 3;
+  opacity: 0.5;
+}
+.text{
+  background-color: azure;
+
+}
+.text text{
+  fill:blue;
+  stroke:aqua;
+  stroke-width: 0.2;
+  opacity: 0.8;
+}
+.line{
+  stroke: brown;
+  stroke-width: 5;
+  
+}
+.polyline{
+  stroke: blueviolet;
+  stroke-width: 2;
+  fill: #fff;
+}
+.polyline polyline{
+  stroke: rgb(119, 6, 6);
+  stroke-width: 2;
+  fill-opacity: 0;
+}
+.polyline .a{
+  stroke: rgb(68, 6, 119);
+  stroke-width: 2;
+  fill: #fff;
+  
+}
+.polygon{
+  stroke: bisque;
+  stroke-width: 2;
+  fill-opacity: 0;
 }
